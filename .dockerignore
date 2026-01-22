@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Build output
+dist/
+
+# Environment variables
+.env
+.env.production
+.env.development
+.env.local
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yaml
+docker-compose.*.yaml
+.dockerignore
+
+# Testing
+coverage/
+test/
+
+# IDE
+.vscode/
+.idea/
+
+# Backend specific (optional, depending on if you mistakenly have them)
+*.log

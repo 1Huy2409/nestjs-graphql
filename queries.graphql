@@ -1,0 +1,52 @@
+# 1. Create User
+mutation CreateUser {
+  createUser(createUserInput: {
+    fullname: "Test User"
+    username: "testuser"
+    email: "test@example.com"
+  }) {
+    id
+    fullname
+    username
+    email
+  }
+}
+
+# 2. Get All Users
+query GetAllUsers {
+  users {
+    id
+    fullname
+    username
+    email
+  }
+}
+
+# 3. Get One User (Replace ID)
+query GetOneUser {
+  user(id: "UUID-HERE") {
+    id
+    fullname
+    username
+    email
+  }
+}
+
+# 4. Update User (Replace ID)
+mutation UpdateUser {
+  updateUser(updateUserInput: {
+    id: "UUID-HERE"
+    fullname: "Updated Name"
+  }) {
+    id
+    fullname
+  }
+}
+
+# 5. Delete User (Replace ID)
+mutation DeleteUser {
+  removeUser(id: "UUID-HERE") {
+    id
+    fullname
+  }
+}
